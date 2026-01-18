@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>نظام تسجيل اختبار تصميم المكعبات</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2 class="main-title">تسجيل اختبار تصميم المكعبات</h2>
+
+    <div id="setup-area" class="center">
+        <label>عمر المفحوص:</label><br>
+        <select id="age-select">
+            <option value="6">6-7 سنوات (البدء من بند 1)</option>
+            <option value="8">8-16 سنة (البدء من بند 3)</option>
+        </select><br>
+        <button class="btn btn-start" onclick="initTest()">بدء الاختبار</button>
+    </div>
+
+    <div id="test-area" class="hidden">
+        <h3 id="item-title"></h3>
+
+        <div class="item-card">
+            <p id="item-desc"></p>
+            <p class="info-text" id="time-info"></p>
+
+            <button id="start-timer-btn" class="btn btn-start" onclick="startClock()">
+                ابدأ التوقيت الآن
+            </button>
+
+            <div class="timer-display">
+                الوقت المتبقي: <span id="seconds">--</span> ثانية
+            </div>
+
+            <div id="scoring-section" class="hidden">
+                <p>النتيجة:</p>
+                <div id="buttons-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="result-area" class="hidden center">
+        <h3>نتائج الاختبار</h3>
+        <div class="final-score">
+            الدرجة الكلية: <span id="final-score"></span>
+        </div>
+        <div id="details-list" class="details"></div>
+        <p id="stop-reason" class="stop-reason"></p>
+        <button class="btn btn-start" onclick="location.reload()">إعادة اختبار جديد</button>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
