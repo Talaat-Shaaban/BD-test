@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    direction: rtl;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.main-title {
+    text-align: center;
+    color: #333;
+}
+
+.center {
+    text-align: center;
+}
+
+.item-card {
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background-color: #fafafa;
+}
+
+.timer-display {
+    font-size: 32px;
+    font-weight: bold;
+    color: #d9534f;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+    margin: 5px;
+}
+
+.btn-start {
+    background-color: #007bff;
+    color: white;
+    width: 40%;
+}
+
+.btn-score {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-fail {
+    background-color: #dc3545;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.info-text {
+    color: #666;
+    font-size: 14px;
+}
+
+.final-score {
+    font-size: 28px;
+    color: #28a745;
+    margin: 20px;
+}
+
+.details {
+    text-align: right;
+    background: #eee;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.stop-reason {
+    color: #d9534f;
+    font-weight: bold;
+}
